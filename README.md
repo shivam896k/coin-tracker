@@ -42,6 +42,9 @@ A small Python utility to fetch, format and export Ethereum transaction data. Th
 
 The runner will use default settings (or values from `.env`) and create a CSV in the `exports/` folder.
 
+## Test
+1. Run tests: `pytest`
+
 
 ## Project layout and important files
 
