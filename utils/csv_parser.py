@@ -1,9 +1,6 @@
 import csv
 
 class CsvParser:
-    def __init__(self):
-        pass
-
     def stream_to_csv(self, generator, filename):
         """
             Stream data from generator directly to CSV file
