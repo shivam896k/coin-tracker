@@ -40,9 +40,11 @@ A small Python utility to fetch, format and export Ethereum transaction data. Th
 
 	.env.sample (edit .env.sample and update api_key and base_url)
 
-4. Run the example report generator:
+4. Run the example report generator (For simplicity I have kept -s parameter for large and small dataset):
 
-	python generate_report.py -a address
+	python generate_report.py -a address -s false
+
+	python generate_report.py -a address -s true
 
 The runner will use default settings (or values from `.env.sample`) and create a CSV in the `exports/` folder.
 
