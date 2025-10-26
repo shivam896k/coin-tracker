@@ -7,7 +7,7 @@ from formatter.ethereum_transaction_formatter import EthereumTransactionFormatte
 class EthereumTransactions:
     def __init__(self, large_txn_count, api_key=None, base_url=None):
         self.api_client = EthereumApiClient(api_key=api_key, base_url=base_url)
-        self.active_block_range = self._active_block_range()
+        self.active_block_range = self._active_block_range() if large_txn_count else {}
         self.large_txn_count = large_txn_count
 
     def get_filename(self, address):
