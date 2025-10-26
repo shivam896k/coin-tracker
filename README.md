@@ -34,7 +34,11 @@ A small Python utility to fetch, format and export Ethereum transaction data. Th
 
 3. Copy environment sample and provide real values:
 
-	env.sample (edit env.sample and update api_key and base_url)
+	Create an account on https://etherscan.io/ and generate an api_key.
+
+	update the api key to .env.sample file
+
+	.env.sample (edit .env.sample and update api_key and base_url)
 
 4. Run the example report generator:
 
