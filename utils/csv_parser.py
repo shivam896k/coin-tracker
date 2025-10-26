@@ -9,7 +9,7 @@ class CsvParser:
         """
         count = 0
 
-        with open(filename, 'w', newline='', encoding='utf-8') as f:
+        with open(filename, 'a', newline='', encoding='utf-8') as f:
             writer = None
 
             for row in generator:
