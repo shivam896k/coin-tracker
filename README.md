@@ -44,7 +44,13 @@ A small Python utility to fetch, format and export Ethereum transaction data. Th
 
 	python generate_report.py -a address
 
-The runner will use default settings (or values from `.env`) and create a CSV in the `exports/` folder.
+The runner will use default settings (or values from `.env.sample`) and create a CSV in the `exports/` folder.
+
+## (Out of scope) We are not using any database.
+
+1. For better performance we can use any of `TimeScaleDB` to store transactions data
+
+2. DB will allow us to filter it based on `date range`, `hash` and many more.
 
 ## Test
 1. Run tests: `pytest`
